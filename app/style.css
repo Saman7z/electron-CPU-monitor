@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+  opacity: 0.9;
+  position: relative;
+}
+.container {
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 1rem;
+}
+.color-white {
+  color: #fff;
+}
+.color-green {
+  color: rgb(49, 192, 125);
+}
+
+.inline {
+  display: inline;
+  margin-left: 10px;
+}
+.main-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.range {
+  overflow: hidden;
+  margin: 1rem 0;
+  width: 80%;
+  -webkit-appearance: none;
+  background-color: #666;
+  border-radius: 14px;
+  margin-left: 5px;
+}
+.data-box {
+  margin: 10px 0;
+  border: solid rgb(138, 136, 136) 1px;
+  border-radius: 10px;
+  background-color: #666;
+}
+.cpu-used {
+  border-bottom: solid #ccc 1px;
+  color: #fff;
+  padding: 10px;
+}
+.cpu-free {
+  padding: 10px;
+}
+.cpu-model {
+  margin: 1rem 5px;
+}
+#micro-chip-section:hover {
+  color: rgb(49, 192, 125);
+}
+
+#info-section:hover {
+  color: rgb(49, 192, 125);
+}
+#setting-section:hover {
+  color: rgb(49, 192, 125);
+}
+
+.input-style{
+  width: 100%;
+  margin-top: 10px;
+  padding: 7px 1rem;
+  border-radius: 15px;
+  border: none;
+}
+.input-style:focus {
+  outline: none;
+}
+/* INFO SECTION */
+#info {
+  display: none;
+}
+.border-bottom{
+  border-bottom: solid #ccc 1px;
+  color: #fff;
+  padding: 10px;
+}
+.padding-10px{
+  padding: 10px;
+}
+/* SETTINGS SECTION */
+#settings {
+  display: none;
+}
+.setting-container{
+  margin:1.5rem;
+}
+.settings-hr{
+  margin-top: 10px;
+
+}
+.input-margin{
+  margin-top: 2rem;
+}
+.setting-save-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setting-save-btn{
+  margin-top: 2rem;
+  padding: 8px 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(49, 192, 125);
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* 
+FOOTER */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  padding: 0.8rem 0;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #fff;
+  text-align: center;
+}
+.section-name {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

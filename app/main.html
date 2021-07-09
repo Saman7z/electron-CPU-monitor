@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.13.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>System Info | CPU monitor</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- CPU SECTION START -->
+      <div id="cpu">
+        <div class="fa fa-microchip color-green"></div>
+        <h4 class="inline color-green">CPU</h4>
+        <div class="main-data">
+          <input
+            type="range"
+            id="cpuRange"
+            class="range"
+            min="0"
+            max="100"
+            value="5"
+            disabled
+          />
+          <div class="data-box">
+            <div class="cpu-used">CPU Usage: 10%</div>
+            <div class="cpu-free color-white">CPU Free: 90%</div>
+          </div>
+          <div class="cpu-model color-white">Intek xeion core i7/6700 hq</div>
+        </div>
+      </div>
+      <!-- CPU SECTION END -->
+
+      <!-- INFO SECTION START -->
+      <div id="info">
+        <div class="fa fa-info-circle color-green"></div>
+        <h4 class="inline color-green">SYSTEM INFO</h4>
+        <div class="data-box color-white">
+          <div class="border-bottom">
+            Computer Name: <span id="computerName">asfasf</span>
+          </div>
+          <div class="border-bottom">OS: <span id="osName">Linux</span></div>
+          <div class="border-bottom">
+            System Uptime: <span id="systemUptime">asfasf</span>
+          </div>
+          <div class="padding-10px">
+            System Memory: <span id="systemMemory">asfasf</span>
+          </div>
+        </div>
+      </div>
+      <!-- INFO SECTION END -->
+
+      <!-- SETTINGS SECTION START -->
+      <div id="settings">
+        <div class="fa fa-cog color-green"></div>
+        <h4 class="inline color-green">SETTINGS</h4>
+        <hr class="settings-hr" color="#ccc"/>
+        <div class="setting-container">
+        <div class="color-white">CPU Overload Warning (%)</div>
+        <input type="number" min="0" max="100" placeholder="For Example: 80" class="input-style">
+        <div class="color-white input-margin" placeholder="For Example: 5">Alert Frequency (Minute)</div>
+        <input type="number" class="input-style">
+        <div class="setting-save-btn-container">
+
+          <button class="setting-save-btn">Save</button>
+        </div>
+      </div>
+      </div>
+      <!-- SETTINGS SECTION END -->
+    </div>
+    <div class="footer">
+      <div id="micro-chip-section" class="cursor-pointer">
+        <div class="fa fa-microchip"></div>
+        <p class="section-name">CPU</p>
+      </div>
+      <div id="info-section" class="cursor-pointer">
+        <div class="fa fa-info"></div>
+        <p class="section-name">SYSTEM INFO</p>
+      </div>
+      <div id="setting-section" class="cursor-pointer">
+        <div class="fa fa-cog"></div>
+        <p class="section-name">SETTINGS</p>
+      </div>
+    </div>
+    <script src="./js.js"></script>
+  </body>
+</html>
