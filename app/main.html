@@ -21,20 +21,21 @@
         <div class="fa fa-microchip color-green"></div>
         <h4 class="inline color-green">CPU</h4>
         <div class="main-data">
+          <div class="input-wrapper">
           <input
             type="range"
             id="cpuRange"
             class="range"
-            min="0"
-            max="100"
-            value="5"
+            value="80"
             disabled
-          />
+          >
+          <div id="rangeWidth"></div>
+        </div>
           <div class="data-box">
-            <div class="cpu-used">CPU Usage: 10%</div>
-            <div class="cpu-free color-white">CPU Free: 90%</div>
+            <div class="cpu-used">CPU Usage: <span id="cpuUsage">0%</span></div>
+            <div class="cpu-free color-white">CPU Free: <span id="cpuFree">100%</span></div>
           </div>
-          <div class="cpu-model color-white">Intek xeion core i7/6700 hq</div>
+          <div class="cpu-model color-white" id="cpuName">Intek xeion core i7/6700 hq</div>
         </div>
       </div>
       <!-- CPU SECTION END -->
@@ -45,14 +46,14 @@
         <h4 class="inline color-green">SYSTEM INFO</h4>
         <div class="data-box color-white">
           <div class="border-bottom">
-            Computer Name: <span id="computerName">asfasf</span>
+            Computer Name: <span id="computerName"></span>
           </div>
-          <div class="border-bottom">OS: <span id="osName">Linux</span></div>
+          <div class="border-bottom">OS: <span id="osName"></span></div>
           <div class="border-bottom">
-            System Uptime: <span id="systemUptime">asfasf</span>
+            System Uptime: <span id="systemUptime"></span>
           </div>
           <div class="padding-10px">
-            System Memory: <span id="systemMemory">asfasf</span>
+            System Memory: <span id="systemMemory"></span>
           </div>
         </div>
       </div>
