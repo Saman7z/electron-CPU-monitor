@@ -66,12 +66,12 @@
         <hr class="settings-hr" color="#ccc"/>
         <div class="setting-container">
         <div class="color-white">CPU Overload Warning (%)</div>
-        <input type="number" min="0" max="100" placeholder="For Example: 80" class="input-style">
-        <div class="color-white input-margin" placeholder="For Example: 5">Alert Frequency (Minute)</div>
-        <input type="number" class="input-style">
+        <input type="number" min="0" max="100" placeholder="For Example: 80" class="input-style" id="cpuOverload">
+        <div class="color-white input-margin">Alert Frequency (Minute)</div>
+        <input type="number" class="input-style" placeholder="For Example: 5" id="alertFrequency">
         <div class="setting-save-btn-container">
 
-          <button class="setting-save-btn">Save</button>
+          <button class="setting-save-btn" type="submit" id="saveSettingsBtn">Save</button>
         </div>
       </div>
       </div>
